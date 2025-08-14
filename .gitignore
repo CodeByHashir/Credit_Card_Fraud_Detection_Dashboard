@@ -118,9 +118,7 @@ Thumbs.db
 # Streamlit
 .streamlit/
 
-# Data files (exclude large files to avoid GitHub limits)
-*.ftr
-*.csv
+# Data files (Git LFS will handle large files)
 *.xlsx
 *.json
 
