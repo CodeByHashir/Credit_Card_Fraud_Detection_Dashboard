@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🕵️ Credit Card Fraud Detection Dashboard
 
 A comprehensive, interactive dashboard built with Streamlit for analyzing credit card fraud patterns and detecting suspicious transactions using machine learning.
@@ -200,3 +201,6 @@ If you have any questions or need help:
 **Built with ❤️ by [CodeByHashir](https://github.com/CodeByHashir)**
 
 *For fraud detection and financial security analysis*
+=======
+# Credit_Card_Fraud_Detection_Dashboard
+>>>>>>> e57be437274a5de9c9b9cee7ee62122bd96a4f3b
