@@ -118,11 +118,11 @@ Thumbs.db
 # Streamlit
 .streamlit/
 
-# Data files (uncomment if you don't want to include sample data)
-# *.ftr
-# *.csv
-# *.xlsx
-# *.json
+# Data files (exclude large files to avoid GitHub limits)
+*.ftr
+*.csv
+*.xlsx
+*.json
 
 # Large model files
 *.pkl
