@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🕵️ Credit Card Fraud Detection Dashboard
 
 A comprehensive, interactive dashboard built with Streamlit for analyzing credit card fraud patterns and detecting suspicious transactions using machine learning.
@@ -7,38 +6,12 @@ A comprehensive, interactive dashboard built with Streamlit for analyzing credit
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 ![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
 
-## 🌟 Features
+## 🌟 Project Overview
 
-### 📊 **Overview Dashboard**
-- **Real-time KPIs**: Total transactions, fraud rate, fraud count, and total fraud amount
-- **Interactive visualizations**: Pie charts and bar graphs for transaction distribution
-- **Performance metrics**: Average fraud amounts and data coverage statistics
+This repository contains a complete credit card fraud detection solution with two main components:
 
-### 📈 **Trends Analysis**
-- **Temporal patterns**: Fraud incidents over time with minute-level granularity
-- **Transaction trends**: Amount patterns and hourly fraud distribution
-- **Heatmap visualization**: Fraud patterns by hour and day for pattern recognition
-
-### 🔍 **Feature Analysis**
-- **Machine Learning Insights**: Random Forest-based feature importance analysis
-- **Feature distributions**: Histograms showing fraud vs non-fraud patterns
-- **Smart sampling**: Optimized data processing for large datasets
-
-### 🎯 **Model Performance**
-- **Classification metrics**: Precision, Recall, and F1-Score
-- **ROC Curve**: Model performance visualization with AUC scores
-- **Confusion Matrix**: Detailed classification results
-- **Precision-Recall Curve**: Performance analysis for imbalanced datasets
-
-### 🔎 **Drill-Down Analysis**
-- **Transaction search**: Find specific transactions by ID or amount
-- **Advanced filtering**: Sort and filter by multiple criteria
-- **Data exploration**: Interactive tables with pagination
-
-### 💡 **Advanced Insights**
-- **Risk assessment**: Identify high-risk transaction patterns
-- **Anomaly detection**: Statistical outlier analysis
-- **Recommendations**: Actionable insights for fraud prevention
+1. **📊 Interactive Streamlit Dashboard** - Real-time fraud analysis and visualization
+2. **📓 Jupyter Notebook Pipeline** - End-to-end ML workflow from data to insights
 
 ## 🚀 Quick Start
 
@@ -76,13 +49,121 @@ A comprehensive, interactive dashboard built with Streamlit for analyzing credit
 
 ```
 Credit_Card_Fraud_Detection_Dashboard/
-├── app.py                          # Main Streamlit application
+├── app.py                          # Main Streamlit dashboard application
 ├── requirements.txt                # Python dependencies
 ├── README.md                      # Project documentation
 ├── creditcard.ftr                 # Sample dataset (Feather format)
 ├── creditcard.csv                 # Alternative dataset (CSV format)
+├── creditcard_fraud_end_to_end_minimal.ipynb  # End-to-end Jupyter notebook
 └── .gitignore                     # Git ignore file
 ```
+
+## 💳 Credit Card Fraud Detection — End-to-End Project
+
+An end-to-end, self-contained, interactive credit card fraud detection solution.
+This repository covers data loading, EDA, feature engineering, statistical testing, modeling, evaluation, explainability, and a fully interactive single-file HTML dashboard — ready for sharing or hosting on GitHub Pages.
+
+Everything is reproducible from the included Jupyter Notebook and packaged into a polished, offline-capable dashboard.
+
+### 📂 Contents
+
+- **📊 Polished Dashboard** — Single HTML file (no server needed)
+- **📓 Minimal End-to-End Notebook** — Full reproducible pipeline
+- **📁 Dataset** — Kaggle: Credit Card Fraud Detection
+- **⚙️ Modeling Pipeline** — Metrics, plots, explainability
+- **📑 Interactive Drill-Down Table** — Search & filter transactions
+- **🎨 Clean UI** — Responsive charts and compact layout
+
+### 📁 Files
+
+**creditcard.csv**
+- Dataset file from Kaggle.
+- Columns: Time, Amount, Class (0 = Non-Fraud, 1 = Fraud), V1–V28 (PCA-like anonymized features).
+
+**creditcard_fraud_end_to_end_minimal.ipynb**
+- Minimal pipeline:
+  - Load & clean data
+  - EDA & class imbalance check
+  - Feature engineering (Hour/Day, scaling)
+  - Stratified train/validation split
+  - Model training (Logistic Regression, tree-based alternative)
+  - Evaluation (ROC, PR, Confusion Matrix, AUC, AP)
+  - Explainability (Feature importances, PCA)
+  - Export interactive HTML dashboard
+
+**creditcard_fraud_dashboard_v2_header_polished.html**
+- Final polished dashboard — Overview, Trends, Feature Insights, Model Performance, Drill-Down.
+
+**creditcard_fraud_dashboard_v2.html**
+- Earlier dashboard version (kept for reference).
+
+### 🛠 Step-by-Step Workflow
+
+1. **Data Loading**
+   - Load creditcard.csv
+   - Validate shape, columns, and class imbalance
+
+2. **EDA & Data Quality**
+   - Distributions of Amount & Time
+   - Fraud vs Non-Fraud counts & totals
+   - Engineered Hour & Day features
+
+3. **Feature Engineering**
+   - Extract Hour and Day from Time
+   - Standardize Amount
+   - Keep PCA-like features V1–V28
+
+4. **Train/Validation Split**
+   - Stratified split to maintain class ratios
+
+5. **Modeling**
+   - Logistic Regression (class_weight for imbalance)
+   - Optional: RandomForest/GradientBoosting
+   - Predict probabilities & classes
+
+6. **Evaluation**
+   - ROC Curve & AUC
+   - Precision-Recall Curve & Average Precision
+   - Confusion Matrix
+   - KPI extraction for dashboard
+
+7. **Explainability & Insights**
+   - Feature importances / coefficients
+   - PCA 2D visualization
+   - Class-based distribution overlays
+
+## 📊 Streamlit Dashboard Features
+
+### 📊 **Overview Dashboard**
+- **Real-time KPIs**: Total transactions, fraud rate, fraud count, and total fraud amount
+- **Interactive visualizations**: Pie charts and bar graphs for transaction distribution
+- **Performance metrics**: Average fraud amounts and data coverage statistics
+
+### 📈 **Trends Analysis**
+- **Temporal patterns**: Fraud incidents over time with minute-level granularity
+- **Transaction trends**: Amount patterns and hourly fraud distribution
+- **Heatmap visualization**: Fraud patterns by hour and day for pattern recognition
+
+### 🔍 **Feature Analysis**
+- **Machine Learning Insights**: Random Forest-based feature importance analysis
+- **Feature distributions**: Histograms showing fraud vs non-fraud patterns
+- **Smart sampling**: Optimized data processing for large datasets
+
+### 🎯 **Model Performance**
+- **Classification metrics**: Precision, Recall, and F1-Score
+- **ROC Curve**: Model performance visualization with AUC scores
+- **Confusion Matrix**: Detailed classification results
+- **Precision-Recall Curve**: Performance analysis for imbalanced datasets
+
+### 🔎 **Drill-Down Analysis**
+- **Transaction search**: Find specific transactions by ID or amount
+- **Advanced filtering**: Sort and filter by multiple criteria
+- **Data exploration**: Interactive tables with pagination
+
+### 💡 **Advanced Insights**
+- **Risk assessment**: Identify high-risk transaction patterns
+- **Anomaly detection**: Statistical outlier analysis
+- **Recommendations**: Actionable insights for fraud prevention
 
 ## 🛠️ Dependencies
 
@@ -168,9 +249,6 @@ We welcome contributions! Please feel free to:
 - Test with different dataset sizes
 - Ensure responsive design
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
@@ -201,6 +279,3 @@ If you have any questions or need help:
 **Built with ❤️ by [CodeByHashir](https://github.com/CodeByHashir)**
 
 *For fraud detection and financial security analysis*
-=======
-# Credit_Card_Fraud_Detection_Dashboard
->>>>>>> e57be437274a5de9c9b9cee7ee62122bd96a4f3b
