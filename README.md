@@ -264,7 +264,7 @@ We welcome contributions! Please feel free to:
 If you have any questions or need help:
 
 - **GitHub Issues**: [Create an issue](https://github.com/CodeByHashir/Credit_Card_Fraud_Detection_Dashboard/issues)
-- **Email**: Contact through GitHub profile
+- **Email**: Hashirahmad330@Gmail.com
 - **Documentation**: Check the code comments and this README
 
 ## 🔮 Future Enhancements
