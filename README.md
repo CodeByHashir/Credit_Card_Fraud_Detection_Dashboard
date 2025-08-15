@@ -6,6 +6,8 @@ A comprehensive, interactive dashboard built with Streamlit for analyzing credit
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 ![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
 
+![Dashboard Preview](https://github.com/user-attachments/assets/51fe4886-2091-4b37-8c76-7aef7ceed6cf)
+
 ## 🌟 Project Overview
 
 This repository contains a complete credit card fraud detection solution with two main components:
@@ -51,11 +53,11 @@ This repository contains a complete credit card fraud detection solution with tw
 Credit_Card_Fraud_Detection_Dashboard/
 ├── app.py                          # Main Streamlit dashboard application
 ├── requirements.txt                # Python dependencies
-├── README.md                      # Project documentation
-├── creditcard.ftr                 # Sample dataset (Feather format)
-├── creditcard.csv                 # Alternative dataset (CSV format)
+├── README.md                       # Project documentation
+├── creditcard.ftr                  # Sample dataset (Feather format)
+├── DataSet Link.csv                # Kaggle dataset (CSV format)
 ├── creditcard_fraud_end_to_end_minimal.ipynb  # End-to-end Jupyter notebook
-└── .gitignore                     # Git ignore file
+└── .gitignore                      # Git ignore file
 ```
 
 ## 💳 Credit Card Fraud Detection — End-to-End Project
