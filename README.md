@@ -267,7 +267,7 @@ If you have any questions or need help:
 - **Email**: Hashirahmad330@Gmail.com
 - **Documentation**: Check the code comments and this README
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] **Real-time streaming**: Live transaction monitoring
 - [ ] **Multiple ML models**: Support for different algorithms
